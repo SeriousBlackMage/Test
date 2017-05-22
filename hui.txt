@@ -1,0 +1,15 @@
+  public boolean gewonnen(char spieler){
+        boolean g = false;
+        if(feld[0][0] == spieler && feld[0][1] == spieler && feld[0][2] == spieler){g=true;}
+        if(feld[1][0] == spieler && feld[1][1] == spieler && feld[1][2] == spieler){g=true;}
+        if(feld[2][0] == spieler && feld[2][1] == spieler && feld[2][2] == spieler){g=true;}
+        
+        if(feld[0][0] == spieler && feld[1][0] == spieler && feld[2][0] == spieler){g=true;}
+        if(feld[0][1] == spieler && feld[1][1] == spieler && feld[2][1] == spieler){g=true;}
+        if(feld[0][2] == spieler && feld[1][2] == spieler && feld[2][2] == spieler){g=true;}
+        
+        if(feld[0][0] == spieler && feld[1][1] == spieler && feld[2][2] == spieler){g=true;}
+        if(feld[0][2] == spieler && feld[1][1] == spieler && feld[1][0] == spieler){g=true;}
+        
+        return g;
+    }
